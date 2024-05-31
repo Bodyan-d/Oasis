@@ -6,10 +6,9 @@ background-image: url('./images/futuristic-casino-architecture-mobile.png');
 background-position: top;
 background-repeat: no-repeat; 
 display: block;
-backdrop-filter: blur(10px);
 box-shadow: inset 0px -100px 50px -80px #920a4c,inset 0px 100px 50px -80px #920a4c, inset 0px 100px 10px -95px #fff, inset 0px -100px 10px -95px #fff;
-
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
