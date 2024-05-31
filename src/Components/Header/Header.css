@@ -9,7 +9,7 @@
     content: "";
     background-image: url("../../images/coins-top.png");
     overflow: hidden;
-    width: 600px;
+    width: 100vw;
     height: 400px;
     position: absolute;
     z-index: -1;
