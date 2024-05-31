@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -13,8 +14,7 @@
     border: 2px solid #FF0066;
     border-radius: 30px;
     box-shadow: -2px 0px 44px -10px #FF0066;
-    background-color: rgba(255, 254, 254, 0.2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     color: #ffff;
     text-align: center;
     z-index: 2;
