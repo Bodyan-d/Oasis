@@ -15,7 +15,6 @@
     box-shadow: -2px 0px 44px -10px #FF0066;
     background-color: rgba(255, 254, 254, 0.2);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
     color: #ffff;
     text-align: center;
     z-index: 2;
