@@ -1,12 +1,20 @@
 @import url(./min.css);
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
 body {
-font-family: myFirstFont;
-background-image: url('./images/futuristic-casino-architecture-mobile.png');
-background-position: top;
-background-repeat: no-repeat; 
-display: block;
-box-shadow: inset 0px -100px 50px -80px #920a4c,inset 0px 100px 50px -80px #920a4c, inset 0px 100px 10px -95px #fff, inset 0px -100px 10px -95px #fff;
+  font-family: myFirstFont;
+  background-image: url('./images/futuristic-casino-architecture-mobile.png');
+  background-position: top;
+  background-repeat: no-repeat; 
+  display: block;
+  box-shadow: inset 0px -100px 50px -80px #920a4c,inset 0px 100px 50px -80px #920a4c, inset 0px 100px 10px -95px #fff, inset 0px -100px 10px -95px #fff;
+  height: 100vh;
 }
 
 
