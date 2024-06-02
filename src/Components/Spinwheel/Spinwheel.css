@@ -138,8 +138,8 @@ span {
 .box1 .span3 h5{
     width: 100px;
     position: absolute;
-    top: 15%;
-    right: 35%;
+    top: 12%;
+    right: 33%;
     transform: rotate(-90deg);
     text-align: center;
 }
@@ -148,7 +148,7 @@ span {
     position: absolute;
     top: 25%;
     right: 22%;
-    transform: rotate(-45deg);
+    transform: rotate(-50deg);
     text-align: center;
 }
 
@@ -171,8 +171,8 @@ span {
 .box2 .span2 h5{
     width: 100px;
     position: absolute;
-    top: 20%;
-    right: 55%;
+    top: 18%;
+    right: 54%;
     transform: rotate(-130deg);
     text-align: center;
 }
@@ -180,7 +180,7 @@ span {
 .box2 .span3 h5{
     position: absolute;
     top: 15%;
-    right: 35%;
+    right: 36%;
     transform: rotate(270deg);
     text-align: center;
 }

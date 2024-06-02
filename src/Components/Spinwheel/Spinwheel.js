@@ -84,7 +84,7 @@ const SpinWheel = () => {
             <span className="font span5"><h5>BONUS 250 FS</h5></span>
           </div>
           <div className="box2">
-          <span className="font span1"><h5>TRY AGAINFS</h5></span>
+          <span className="font span1"><h5>TRY AGAIN</h5></span>
             <span className="font span2"><h5>BONUS 150% FOR DEPOSIT</h5></span>
             <span className="font span3"><h5>WITHOUT PRIZE</h5></span>
             <span className="font span4"><h5>BONUS 250 FS</h5></span> {/* */}
