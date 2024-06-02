@@ -15,15 +15,6 @@
     top: -8px;
 }
 
-.mainbox.animate:after{
-    animation: animateArrow 0.7s ease infinite;
-}
-
-@keyframes animateArrow {
-    50%{
-        right: -50px;
-    }
-}
 .box{
     width: 100%;
     height: 100%;
@@ -32,7 +23,7 @@
     border-radius: 50%;
     overflow: hidden;
     transition: all ease-in-out 5s;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 }
 
 .mainbox::before {
@@ -43,7 +34,8 @@
     left: -5px;
     bottom: -5px;
     right: -5px;
-    transform: rotate(55deg);
+
+    overflow: hidden;
     position: absolute;
     z-index:-1;
 }
@@ -56,9 +48,9 @@
     left: -25px;
     bottom: -25px;
     right: -25px;
-    transform: rotate(135deg);
     position: absolute;
     z-index:-2;
+
 }
 
 span {
@@ -66,78 +58,59 @@ span {
     height: 100%;
     display: inline-block;
     position: absolute;
-    clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
 }
+
 
 /* Сегмент 1 */
 .span1 {
-    clip-path: polygon(0 62%, 0 37%, 50% 50%);
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);
     background: radial-gradient(circle, rgba(38,139,205,1) 20%, rgba(34,125,199,1) 45%, rgba(24,89,184,1) 60%, rgba(8,30,160,1) 79%, rgba(0,0,147,1) 88%, rgba(1,6,149,1) 90%, rgba(3,23,154,1) 93%, rgba(6,51,162,1) 95%, rgba(10,89,173,1) 98%, rgba(13,114,180,1) 100%);
 }
 
 /* Сегмент 2 */
 .span2 {
-    clip-path: polygon(0 37%, 3% 0, 50% 50%);
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);
     background: radial-gradient(circle, rgba(255,0,102,1) 20%, rgba(255,13,100,1) 62%, rgba(255,21,99,1) 76%, rgba(255,0,102,1) 84%, rgba(255,0,111,1) 93%, rgba(255,0,120,1) 97%, rgba(255,0,122,1) 100%);
 }
 
 /* Сегмент 3 */
 .span3 {
-    clip-path: polygon(3% 0, 36% 0, 50% 50%);
+    clip-path: polygon(30% 0, 71% 0%, 50% 50%);
     background: radial-gradient(circle, rgba(38,139,205,1) 20%, rgba(34,125,199,1) 45%, rgba(24,89,184,1) 60%, rgba(8,30,160,1) 79%, rgba(0,0,147,1) 88%, rgba(1,6,149,1) 90%, rgba(3,23,154,1) 93%, rgba(6,51,162,1) 95%, rgba(10,89,173,1) 98%, rgba(13,114,180,1) 100%);
 }
 
+
 /* Сегмент 4 */
 .span4 {
-    clip-path: polygon(36% 0, 65% 0, 50% 50%);
+    clip-path: polygon(71% 0, 100% 18%, 50% 50%);
     background: radial-gradient(circle, rgba(255,0,102,1) 20%, rgba(255,13,100,1) 62%, rgba(255,21,99,1) 76%, rgba(255,0,102,1) 84%, rgba(255,0,111,1) 93%, rgba(255,0,120,1) 97%, rgba(255,0,122,1) 100%);
 }
 
 /* Сегмент 5 */
 .span5 {
-    clip-path: polygon(65% 0, 95% 0, 50% 50%);
+    clip-path: polygon(100% 18%, 100% 50%, 50% 50%);
     background: radial-gradient(circle, rgba(38,139,205,1) 20%, rgba(34,125,199,1) 45%, rgba(24,89,184,1) 60%, rgba(8,30,160,1) 79%, rgba(0,0,147,1) 88%, rgba(1,6,149,1) 90%, rgba(3,23,154,1) 93%, rgba(6,51,162,1) 95%, rgba(10,89,173,1) 98%, rgba(13,114,180,1) 100%);
 }
 
-/* Сегмент 6 */
-.span6 {
-    clip-path: polygon(95% 0, 100% 35%, 50% 50%);
+.box2{
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+.box2 .span1{
     background: radial-gradient(circle, rgba(255,0,102,1) 20%, rgba(255,13,100,1) 62%, rgba(255,21,99,1) 76%, rgba(255,0,102,1) 84%, rgba(255,0,111,1) 93%, rgba(255,0,120,1) 97%, rgba(255,0,122,1) 100%);
 }
-
-/* Сегмент 7 */
-.span7 {
-    clip-path: polygon(100% 35%, 100% 61%, 50% 50%);
+.box2 .span2{
     background: radial-gradient(circle, rgba(38,139,205,1) 20%, rgba(34,125,199,1) 45%, rgba(24,89,184,1) 60%, rgba(8,30,160,1) 79%, rgba(0,0,147,1) 88%, rgba(1,6,149,1) 90%, rgba(3,23,154,1) 93%, rgba(6,51,162,1) 95%, rgba(10,89,173,1) 98%, rgba(13,114,180,1) 100%);
 }
-
-/* Сегмент 8 */
-.span8 {
-    clip-path: polygon(100% 61%, 100% 98%, 50% 50%);
+.box2 .span3{
     background: radial-gradient(circle, rgba(255,0,102,1) 20%, rgba(255,13,100,1) 62%, rgba(255,21,99,1) 76%, rgba(255,0,102,1) 84%, rgba(255,0,111,1) 93%, rgba(255,0,120,1) 97%, rgba(255,0,122,1) 100%);
 }
-
-/* Сегмент 9 */
-.span9 {
-    clip-path: polygon(100% 98%, 65% 100%, 50% 50%);
+.box2 .span4{
     background: radial-gradient(circle, rgba(38,139,205,1) 20%, rgba(34,125,199,1) 45%, rgba(24,89,184,1) 60%, rgba(8,30,160,1) 79%, rgba(0,0,147,1) 88%, rgba(1,6,149,1) 90%, rgba(3,23,154,1) 93%, rgba(6,51,162,1) 95%, rgba(10,89,173,1) 98%, rgba(13,114,180,1) 100%);
 }
-
-/* Сегмент 10 */
-.span10 {
-    clip-path: polygon(65% 100%, 35% 100%, 50% 50%);
-    background: radial-gradient(circle, rgba(255,0,102,1) 20%, rgba(255,13,100,1) 62%, rgba(255,21,99,1) 76%, rgba(255,0,102,1) 84%, rgba(255,0,111,1) 93%, rgba(255,0,120,1) 97%, rgba(255,0,122,1) 100%);
-}
-
-/* Сегмент 11 */
-.span11 {
-    clip-path: polygon(35% 100%, 0% 100%, 50% 50%);
-    background: radial-gradient(circle, rgba(38,139,205,1) 20%, rgba(34,125,199,1) 45%, rgba(24,89,184,1) 60%, rgba(8,30,160,1) 79%, rgba(0,0,147,1) 88%, rgba(1,6,149,1) 90%, rgba(3,23,154,1) 93%, rgba(6,51,162,1) 95%, rgba(10,89,173,1) 98%, rgba(13,114,180,1) 100%);
-}
-
-/* Сегмент 12 */
-.span12 {
-    clip-path: polygon(0% 100%, 0 62%, 50% 50%);
+.box2 .span5{
     background: radial-gradient(circle, rgba(255,0,102,1) 20%, rgba(255,13,100,1) 62%, rgba(255,21,99,1) 76%, rgba(255,0,102,1) 84%, rgba(255,0,111,1) 93%, rgba(255,0,120,1) 97%, rgba(255,0,122,1) 100%);
 }
 
@@ -146,102 +119,85 @@ span {
     font-size: small;
 }
 
-.span1 h5{
+.box1 .span1 h5{
     position: absolute;
-    top: 47%;
-    right: 70%;
-    transform: rotate(180deg);
-    text-align: center;
-}
-
-.span2 h5{
-    position: absolute;
-    top: 32%;
+    top: 38%;
     right: 67%;
-    transform: rotate(210deg);
+    transform: rotate(200deg);
     text-align: center;
 }
 
-.span3 h5{
+.box1 .span2 h5{
+    position: absolute;
+    top: 23%;
+    right: 57%;
+    transform: rotate(-130deg);
+    text-align: center;
+}
+
+.box1 .span3 h5{
     width: 100px;
     position: absolute;
-    top: 17%;
-    right: 50%;
-    transform: rotate(240deg);
+    top: 15%;
+    right: 35%;
+    transform: rotate(-90deg);
     text-align: center;
 }
 
-.span4 h5{
+.box1 .span4 h5{
     position: absolute;
-    top: 16%;
-    right: 37%;
-    transform: rotate(272deg);
+    top: 25%;
+    right: 22%;
+    transform: rotate(-45deg);
     text-align: center;
 }
 
-.span5 h5{
+.box1 .span5 h5{
+    position: absolute;
+    top: 39%;
+    right: 8%;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+
+.box2 .span1 h5{
+    position: absolute;
+    top: 38%;
+    right: 70%;
+    transform: rotate(200deg);
+    text-align: center;
+}
+
+.box2 .span2 h5{
+    width: 100px;
     position: absolute;
     top: 20%;
-    right: 24%;
-    transform: rotate(299deg);
+    right: 55%;
+    transform: rotate(-130deg);
     text-align: center;
 }
 
-.span6 h5{
+.box2 .span3 h5{
     position: absolute;
-    top: 30%;
-    right: 13%;
-    transform: rotate(326deg);
+    top: 16%;
+    right: 38%;
+    transform: rotate(270deg);
     text-align: center;
 }
 
-.span7 h5{
-    width: 100px;
+.box2 .span4 h5{
     position: absolute;
-    top: 45%;
-    right: 5%;
-    transform: rotate(360deg);
+    top: 24%;
+    right: 18%;
+    transform: rotate(310deg);
     text-align: center;
 }
 
-.span8 h5{
+.box2 .span5 h5{
     position: absolute;
-    top: 62%;
-    right: 11%;
-    transform: rotate(29deg);
-    text-align: center;
-}
-
-.span9 h5{
-    position: absolute;
-    top: 75%;
-    right: 23%;
-    transform: rotate(56deg);
-    text-align: center;
-}
-
-.span10 h5{
-    position: absolute;
-    top: 80%;
-    right: 42%;
-    transform: rotate(90deg);
-    text-align: center;
-}
-
-.span11 h5{
-    width: 100px;
-    position: absolute;
-    top: 73%;
-    right: 54%;
-    transform: rotate(120deg);
-    text-align: center;
-}
-
-.span12 h5{
-    position: absolute;
-    top: 64%;
-    right: 68%;
-    transform: rotate(148deg);
+    top: 38%;
+    right: 10%;
+    transform: rotate(-20deg);
     text-align: center;
 }
 
@@ -259,13 +215,64 @@ span {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    z-index: 20;
+    z-index: 5;
 }
 
 .spin:active {
-    width: 110px;
-    height: 110px;
-    font-size: large;
+    width: 80px;
+    height: 80px;
+    font-size: small;
 }
 
 
+.mainbox.animate:after{
+    animation: animateArrow 0.7s ease infinite;
+}
+
+
+@keyframes animateArrow {
+    50%{
+        right: -50px;
+    }
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    width: 300px;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 10px;
+    color: #ffe600;
+  }
+  
+  .modal-content p {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    background: #ff00ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
