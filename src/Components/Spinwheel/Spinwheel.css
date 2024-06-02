@@ -1,7 +1,7 @@
 .mainbox{
     position: relative;
-    width: 340px;
-    height: 340px;
+    width: 320px;
+    height: 320px;
 }
 
 .mainbox::after{
@@ -179,8 +179,8 @@ span {
 
 .box2 .span3 h5{
     position: absolute;
-    top: 16%;
-    right: 38%;
+    top: 15%;
+    right: 37%;
     transform: rotate(270deg);
     text-align: center;
 }

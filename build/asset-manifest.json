@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a23c17b9.css",
+    "main.css": "/static/css/main.576db092.css",
     "main.js": "/static/js/main.91aff69a.js",
     "static/media/futuristic-casino-architecture-mobile.png": "/static/media/futuristic-casino-architecture-mobile.233126b6f57a659f1c7e.png",
     "static/media/IntroDemoBlackCaps.otf": "/static/media/IntroDemoBlackCaps.370fbd24e4a78c308d97.otf",
@@ -8,11 +8,11 @@
     "static/media/logo1.png": "/static/media/logo1.4e58cd2f4a6f1dfb5645.png",
     "static/media/Group.svg": "/static/media/Group.d94e62bbb4e06abed031.svg",
     "index.html": "/index.html",
-    "main.a23c17b9.css.map": "/static/css/main.a23c17b9.css.map",
+    "main.576db092.css.map": "/static/css/main.576db092.css.map",
     "main.91aff69a.js.map": "/static/js/main.91aff69a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a23c17b9.css",
+    "static/css/main.576db092.css",
     "static/js/main.91aff69a.js"
   ]
 }
