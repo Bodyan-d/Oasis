@@ -5,12 +5,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Main/>
-      <Footer/>
-      <div className='footer-coins_mobile'></div>
-    </div>
+  <>
+  <div className="App">
+    <Header/>
+    <Main/>
+    <Footer/>
+    
+  </div>
+  <div className='footer-coins_mobile'></div>
+  </>
+  
   );
 }
 

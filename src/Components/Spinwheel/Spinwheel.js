@@ -1,12 +1,12 @@
 import "./Spinwheel.css";
-import React, { useRef, useEffect, useState } from 'react';
-import Swal from 'sweetalert2'
+import React, { useState } from 'react';
 
 
 const SpinWheel = () => {
   const [showModal, setShowModal] = useState(false);
   const [SelectedItem, setSelectedItem] = useState("");
-  const [isButtonDisabled, setButtonDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(false);
+  let [attempts, setAttempts] = useState(2);
 
   function shuffle(array){
     let currentIndex = array.length, randomIndex;
@@ -14,12 +14,14 @@ const SpinWheel = () => {
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
+      // eslint-disable-next-line no-self-assign
       [array[currentIndex], array[randomIndex]] = [array[currentIndex], array[currentIndex],];
     }
     return array;
   }
   
   function spin(){
+    setDisabled(true)
     const box = document.getElementById("box")
     const element = document.getElementById("mainbox")
   
@@ -52,12 +54,16 @@ const SpinWheel = () => {
     box.style.setProperty("transition", "all ease 5s");
     box.style.transform = "rotate(" + results[0] + "deg)";
     element.classList.remove("animate");
+    setAttempts(()=>{
+      return attempts - 1;
+    })
   
     setTimeout(function () {
         element.classList.add("animate")
     }, 5000)
   
     setTimeout(function () {
+      setDisabled(false)
       setShowModal(true)
     },6000)
     setTimeout(function () {
@@ -72,27 +78,27 @@ const SpinWheel = () => {
 
   return (
     <>
-      <p className="attempts">ATTEMPTS: 2</p>
+      <p className="attempts">ATTEMPTS: {attempts}</p>
       <div className="mainbox" id="mainbox" >
         <div className="sercule"></div>
         <div className="box" id="box">
           <div className="box1">
-            <span className="font span1"><h5>BONUS 250 FS</h5></span> {/* */}
+            <span className="font span1"><h5>BONUS 250 FS</h5></span> 
             <span className="font span2"><h5>WITHOUT PRIZE</h5></span>
             <span className="font span3"><h5>BONUS 150% FOR DEPOSIT</h5></span>
-            <span className="font span4"><h5>TRY AGAIN</h5></span> {/* */}
+            <span className="font span4"><h5>TRY AGAIN</h5></span> 
             <span className="font span5"><h5>BONUS 250 FS</h5></span>
           </div>
           <div className="box2">
           <span className="font span1"><h5>TRY AGAIN</h5></span>
             <span className="font span2"><h5>BONUS 150% FOR DEPOSIT</h5></span>
             <span className="font span3"><h5>WITHOUT PRIZE</h5></span>
-            <span className="font span4"><h5>BONUS 250 FS</h5></span> {/* */}
+            <span className="font span4"><h5>BONUS 250 FS</h5></span>
             <span className="font span5"><h5>TRY AGAIN</h5></span>
 
           </div>
         </div>
-        <button className="spin" onClick={spin}>SPIN</button>
+        <button disabled={disabled}  className="spin" onClick={spin}>SPIN</button>
 
         {showModal && (
         <div className="modal">
