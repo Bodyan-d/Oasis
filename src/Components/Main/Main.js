@@ -10,9 +10,8 @@ function Main(){
     return(
         <div className="main-container">
             <div className="outer-blur"></div>
-            {/* <p className="attempts">ATTEMPTS: 2</p>  */}
             <SpinWheel />
-            {/* <RouletteWheel /> */}
+           
         </div>
         
     )
